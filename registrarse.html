@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cinestismo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/9bdd2f2db3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                    <a class="navbar-brand" href="index.html">CiNeTiSmO</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="cinetismo1.html">Jesus SOTO</a></li>
+                        <li><a href="museo.html">Museos</a></li>
+                        <li><a href="registrarse.html">Registrarse</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="titulos">
+            <span id="h2">ReGiStRaTe y envia tus comentarios</span>
+            <div id="animacion"></div>
+            <div id="contacto">
+                <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com/ " target="blank "><i class="fab fa-twitter "></i></a>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="https://facebook.com/ " target="blank "><i class="fab fa-facebook-f "></i></a>
+                <i class="fab fa-instagram"></i>
+                <a href="https://instagram.com/ " target="blank "><i class="fab fa-instagram "></i></a>
+            </div>
+        </div>
+        <form novalidate>
+            <div class="formulario">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control" maxlength="15" pattern="[A-Za-z]{2,15}" title="Introduzca entre 2 y 12 palabras " required>
+                </div>
+                <div class="mb-3">
+                    <label for="n1" class="form-label">¿Qué edad tienes?</label>
+                    <input type="number" class="form-control" min="12" max="120" step="1" id="n1" name="age">
+                </div>
+                <div class="mb-3">
+                    <label for="mail" class="form-label"> Email </label>
+                    <input type="email" class="form-control" id="mail" name="mail" required minlength="8">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="t3" class="form-label">Deja comentarios</label>
+                    <textarea class="form-control" id="t3" name="msg" maxlength="140" rows="3"></textarea>
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="ENVIAR">
+            </div>
+
+        </form>
+    </div>
+    <div id="footer"></div>
+    <script src="JS/footer.js"></script>
+    <script src="JS/header.js"></script>
+</body>
+
+</html>
